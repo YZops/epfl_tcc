@@ -1,0 +1,30 @@
+{% include '_header.html' %}
+    
+    <main>
+        <h1>Remove Saving</h1>
+
+        <p>Select a saving to remove</p>
+
+        {% autoescape false %}
+            {{ out_message }}
+        {% endautoescape %}
+
+        <div id="remove_store">
+            <form action="{{ url_for('remove_saving') }}" method="get">
+                
+                <div class="form_fieldset">
+                    {% autoescape false %}
+                        {{ radio_saving }}
+                    {% endautoescape %}
+                </div>
+                
+                <div class="form_fieldset_submit">
+                    <input type="submit" value="Remove Selected Store">
+                </div>
+            
+            </form>
+        </div>
+
+    </main>
+
+{% include '_footer.html' %}

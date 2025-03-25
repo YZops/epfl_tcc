@@ -1,0 +1,83 @@
+/* General Styling */
+body {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+header {
+    text-align: right;
+}
+
+footer {
+    font-size: 14px;
+    margin-top: 20px;
+    border-top: 1px solid blue;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+
+h2.welcomeUsername {
+    font-size: 24px;
+    color: ;
+    font-weight: bold;
+}
+
+a, a:link, a:active, a:visited {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/* Elements */
+input {
+    margin: 4px 2px;
+    border: 1px solid blue;
+}
+
+input[type=text] {
+    background-color: white;
+    padding: 8px 4px;
+    width: 250px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    color: blue;
+    font-weight: bold;
+    background-color: aquamarine;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Helper Classes */
+.displayNone {
+    display: none !important;
+}
+
+.displayBlock {
+    display: block !important;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.result {
+    font-size: 14px;
+    font-weight: bold;
+}

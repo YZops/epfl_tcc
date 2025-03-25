@@ -1,0 +1,22 @@
+{% include '_header.html' %}
+    
+    <main>
+        <h1>Money Saving App</h1>
+
+        <p>
+            Whether in a local store or online. You can save money anytime and anywhere. From food to clothing and everything else.<br><br>
+            
+            {% if display_stores == "zero" %}
+                First time here? Go to <a href="{{ url_for('configuration') }}">Configuration</a> and add a store. After that starting to add savings.
+            {% else %}
+                But how much money do you actually save? <a href="{{ url_for('add_saving') }}">Let's find out</a>.
+            {% endif %}
+        </p>
+
+        <div id="welcomeMessageDiv">
+            <p>You last used this app <span id="getDay"></span>.</p>
+        </div>
+
+    </main>
+
+{% include '_footer.html' %}

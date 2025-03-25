@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Web Note App</title>
+</head>
+<body>
+    
+    <header>
+        <nav><a href="/add_note">Add a note</a> | <a href="/view_notes">View all notes</a> | <a href="/search_notes">Search for notes</a></nav>
+    </header>
+
+    <main>
+
+        <h1>Search for notes</h1>
+
+        <form action="/search_notes" method="get">
+            <input type="text" id="notesearch" class="textbox" name="q">
+            <input type="submit" value="Search Note">
+        </form>
+
+        $$NOTESEARCHRESULT$$
+
+    </main>
+
+    <footer>
+        <p>EPFL - Extension School - <a href="/">Web Note App</a></p>
+    </footer>
+
+</body>
+</html>

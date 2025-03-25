@@ -1,0 +1,125 @@
+/*
+/* General Styling
+*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+/* Links */
+a:link,
+a:active,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+/*
+/* Header and Main Navigation
+*/
+header {
+    background-color: yellow;
+    padding: 20px 15px;
+}
+
+header nav {
+    color: black;
+}
+
+header nav a {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+/*
+/* Main - Body with informations
+*/
+main {
+    padding: 0 15px;
+}
+
+main h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: orangered;
+}
+
+main h2 {
+    font-size: 26px;
+}
+
+/* Body special elements */
+#welcomeMessageDiv {
+    font-weight: bold;
+}
+
+/* Form general */
+.form_fieldset p {
+    margin-bottom: 5px;
+}
+
+.form_fieldset_submit {
+    margin-top: 30px;
+}
+
+/* Form elements */
+input, select {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 200px;
+    height: 22px;
+    border: 1px solid black;
+}
+
+select {
+    font-size: 14px;
+}
+
+input[type=radio] {
+    width: 30px;
+}
+
+input[type=submit] {
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+    background-color: #efefef;
+    text-decoration: none;
+    height: 40px;
+    border:1px solid blue;
+    cursor: pointer;
+}
+
+input[type=submit].small {
+    height: 27px;
+}
+
+/*
+/* Footer Area
+*/
+footer {
+    margin-top: 40px;
+    padding: 10px 15px 0;
+    border-top: 1px solid black;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+

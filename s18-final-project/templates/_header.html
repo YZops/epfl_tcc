@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    {% if request.endpoint == "add_saving" %}
+        {% set title_pre = 'Add Saving - ' %}
+    {% elif request.endpoint == "view_savings" %}
+        {% set title_pre = 'View Savings - ' %}
+    {% elif request.endpoint == "remove_saving" %}
+        {% set title_pre = 'Remove Savings - ' %}
+    {% elif request.endpoint == "configuration" %}
+        {% set title_pre = 'App Configuration - ' %}
+    {% elif request.endpoint == "configuration_save" %}
+        {% set title_pre = 'App Configuration - ' %}
+    {% else %}
+        {% set title_pre = '' %}
+    {% endif %}
+    <title>{{ title_pre }}Money Saving App</title>
+</head>
+<body>
+
+    <header>
+        <nav> <a href="/">Home</a> | <a href="{{ url_for('add_saving') }}">Add saving</a> | <a href="{{ url_for('view_savings') }}">View savings</a> | <a href="{{ url_for('remove_saving') }}">Remove savings</a> | <a href="{{ url_for('configuration') }}">App Configuration</a></nav>
+    </header>

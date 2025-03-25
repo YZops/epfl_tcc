@@ -1,0 +1,28 @@
+{% include '_header.html' %}
+    
+    <main>
+        <h1>Your Savings</h1>
+
+        <div id="filter_savings">
+            <form action="{{ url_for('view_savings') }}" method="get">
+                
+                <div class="form_fieldset">
+                    <p>Show savings in a date range:</p>
+                    from <input type="date" id="saving_date" class="textbox" name="sdate_from"> to <input type="date" id="saving_date" class="textbox" name="sdate_to"> <input type="submit" class="small" value="Show Savings">
+                </div>
+
+                <div class="form_fieldset_submit">
+                    
+                </div>
+
+            </form>
+        </div>
+
+        {% autoescape false %}
+            {{ out_date_store_amount }}
+            {{ out_total_save_amount }}
+        {% endautoescape %}
+
+    </main>
+
+{% include '_footer.html' %}

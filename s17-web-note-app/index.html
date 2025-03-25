@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Web Note App</title>
+</head>
+<body>
+    
+    <main>
+        <h1>This is the Web Note App</h1>
+
+        <div id="welcomeMessageDiv">
+            
+        </div>
+
+        <div id="welcomeNavigation" class="displayNone">
+            <p>What would you like to do?</p>
+            <nav>
+                <p>- <a href="/add_note">Add a note</a></p>
+                <p>- <a href="/view_notes">View all notes</a></p>
+                <p>- <a href="/search_notes">Search for notes</a></p>
+            </nav>
+        </div>
+
+        <div id="setUsernameDiv">
+            <p id="setUsernameError" class="displayNone">Please enter a user name</p>
+            <input type="text" id="fieldSetUsername" class="textbox" placeholder="Enter a username"> <input type="submit" id="butSetUsername" value="Set Username">
+        </div>
+
+    </main>
+
+    <footer>
+        <p>EPFL - Extension School - <a href="/">Web Note App</a></p>
+    </footer>
+
+    <script src="static/script.js"></script> 
+</body>
+</html>
